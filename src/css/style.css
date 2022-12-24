@@ -14,11 +14,12 @@ label{
   display: flex;
   background-color: rgb(255, 255, 255);
   width: 25rem;
-  min-width: 350px;
+  min-width: 340px;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 50px;
 }
+
 input{
   position: relative;
   left: 10px;
@@ -234,8 +235,8 @@ div.gradient{
   gap: 5rem;
 }
 .arrow-left,
-
 .arrow-right{
+  padding: 2%;
   position: absolute;
   top: 0;
   left: 0;
@@ -271,13 +272,14 @@ div.gradient{
 .gallery-wrapper::-webkit-scrollbar{
   display: none;
 }
+
 @media (max-width: 900px) {
   .container {
     margin-top: 50px;
     border-radius: 12px;
     position: relative;
     padding: 15px;
-    width: 100%;
+    width: 90%;
    
   }
   .item{
@@ -294,3 +296,23 @@ div.gradient{
     background-color:rgb(32, 32, 32);
   }
 } 
+@media (max-width:600px){
+ 
+
+}
+nav a{
+  display: none;
+}
+button.mobile{
+transition: 2s;
+position: absolute;
+top: 30px;
+width: 55px;
+height: 30px;
+background-color: transparent;
+}
+button.mobile hr{
+  background-color: red;
+  padding: 5%;
+  border-radius: 5px;
+}
