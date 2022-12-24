@@ -272,6 +272,9 @@ div.gradient{
 .gallery-wrapper::-webkit-scrollbar{
   display: none;
 }
+nav a{
+  display: none;
+} 
 
 @media (max-width: 900px) {
   .container {
@@ -279,7 +282,7 @@ div.gradient{
     border-radius: 12px;
     position: relative;
     padding: 15px;
-    width: 99%;
+    width: 99vw;
    
   }
   .item{
@@ -295,6 +298,7 @@ div.gradient{
     justify-content: space-around;
     background-color:rgb(32, 32, 32);
   }
+  
 } 
 @media (max-width:600px){
   label{
