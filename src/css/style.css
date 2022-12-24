@@ -321,8 +321,12 @@ button.mobile.active hr.hr2{
 visibility: hidden;
 }
 button.mobile.active hr.hr1{
-  transform: rotate(195deg);
+  transform: rotate(405deg);
+  position: relative;
+  bottom: -23px;
 }
 button.mobile.active hr.hr3{
-  transform: rotate(-195deg);
+  transform: rotate(-405deg);
+  position: relative;
+  top: -19px;
 }
