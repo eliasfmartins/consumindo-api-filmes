@@ -18,14 +18,15 @@ label{
   align-items: center;
   justify-content: space-between;
   height: 50px;
+  margin-right: 25px;
 }
 
 input{
   position: relative;
   left: 10px;
-  padding: 5%;
+  padding: 2%;
   border: none;
-  width: 16rem;
+  width: auto;
   height: 40px;
 }
 #buscaFilme:focus{
@@ -64,7 +65,6 @@ div.cards{
   padding: 1%;
   background-color: black;
   flex-wrap: wrap;
-  gap: 1em;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -279,7 +279,7 @@ div.gradient{
     border-radius: 12px;
     position: relative;
     padding: 15px;
-    width: 90%;
+    width: 99%;
    
   }
   .item{
@@ -300,10 +300,14 @@ div.gradient{
  
 
 }
-nav a{
+/* nav.hidden a{
+  display: none;
+} */
+nav a {
   display: none;
 }
 button.mobile{
+  display: none;
 transition: 2ms ease-in;
 position: absolute;
 top: 30px;

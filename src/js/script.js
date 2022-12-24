@@ -11,11 +11,13 @@ const gallery = document.querySelector('.gallery');
 const home = document.querySelector('.home')
 const categoria = document.querySelector('.categoria');
 const btn = document.querySelector('.mobile');
+const nav = document.querySelector('.nav');
 
 
 
 btn.addEventListener('click', (e)=>{
   btn.classList.toggle('active');
+  nav.classList.toggle('hidden')
 })
 // const cardsFIlmes = document.querySelector('.card');
 
@@ -139,6 +141,7 @@ function createMovieCard(data){
   fotofilme.innerHTML= `<img src="${img}/${tamanho}/${poster_path}" alt="fotoDosFilmes">`
   titulo.innerHTML= title
   resumo.innerHTML= overview
+  
   
 });
 }
