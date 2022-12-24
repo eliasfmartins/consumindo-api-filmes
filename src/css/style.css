@@ -195,12 +195,12 @@ div.gradient{
   justify-content: space-around;
   background-color:rgb(32, 32, 32);
   
-  height: auto;
+  height: 400px;
   min-width: 450px;
 }
 .item{
   
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 1rem;
   padding: 20px;
   border-radius: 13px;
@@ -208,7 +208,7 @@ div.gradient{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 98%;
+  width: 100%;
   flex-shrink: 0;  /* não reduz o elemento de tamanho para caber dentro da div  */
   height: auto;  
   opacity: 0.6;
@@ -271,7 +271,7 @@ div.gradient{
 .gallery-wrapper::-webkit-scrollbar{
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .container {
     margin-top: 50px;
     border-radius: 12px;
@@ -279,6 +279,9 @@ div.gradient{
     padding: 15px;
     width: 100%;
    
+  }
+  .item{
+    flex-wrap: wrap;
   }
   .itenCarusel2{
     width: 100%;
