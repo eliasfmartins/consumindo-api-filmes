@@ -10,6 +10,13 @@ const input = document.querySelector('#buscaFilme');
 const gallery = document.querySelector('.gallery');
 const home = document.querySelector('.home')
 const categoria = document.querySelector('.categoria');
+const btn = document.querySelector('.mobile');
+
+
+
+btn.addEventListener('click', (e)=>{
+  btn.classList.toggle('active');
+})
 // const cardsFIlmes = document.querySelector('.card');
 
 
