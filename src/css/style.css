@@ -297,15 +297,15 @@ div.gradient{
   }
 } 
 @media (max-width:600px){
- 
+  label{
+    width: 90%;
+  }
 
 }
-/* nav.hidden a{
+ nav.hidden a{
   display: none;
-} */
-nav a {
-  display: none;
-}
+} 
+
 button.mobile{
   display: none;
 transition: 2ms ease-in;

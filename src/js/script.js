@@ -178,7 +178,7 @@ const isLeft = control.classList.contains('arrow-left');
         //items[currentItem].scrollIntoView({
         //vai tentar deixar o intem da vez no centro correspondente ao curreitem
         inline: "center",
-        behavior: "smooth",
+        // behavior: "smooth",
       });
       items[currentItem].classList.add('current-item')
 })
