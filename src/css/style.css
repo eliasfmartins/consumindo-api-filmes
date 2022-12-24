@@ -49,7 +49,7 @@ a:hover{
   color: white;
 }
 button.busca{
-  padding: 2%;
+  padding: 1%;
   font-size: 1rem;
   font-weight: 600;
   color: white;
@@ -63,11 +63,11 @@ div.cards{
   padding: 1%;
   background-color: black;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1em;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 100%;
+  height: auto;
 }
 img{
   border-radius: 12px 12px ;
@@ -83,6 +83,7 @@ img{
   line-height: 1.6;
 }
 .dados{
+  transition: 1s ease-in-out;
   opacity: 0;
   overflow-x: hidden;
   transition: 0.6 ease-in-out;
@@ -111,13 +112,13 @@ img{
    overflow-x: hidden;
 } 
 .card{
-  row-gap: 1rem;
+  row-gap: 0.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 12px;
-  width: 330px;
+  width: 300px;
   height: 450px;
   padding: 1%;
   color: white;
@@ -170,7 +171,7 @@ main{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ac9aedf1-a687-4c5d-965c-2fc3eac84aea/b02b882e-4d72-4529-bad5-946a3c89faf3/BR-pt-20221206-popsignuptwoweeks-perspective_alpha_website_small.jpg);
 }
 div.gradient{
@@ -182,8 +183,8 @@ div.gradient{
   background-image: linear-gradient(black,transparent, black);
 }
 .itenCarusel1{
-  width: 320px;
-  height: 400px;
+  width: auto;
+  height: auto;
 }
 .itenCarusel2{
   border-radius: 12px;
@@ -193,18 +194,36 @@ div.gradient{
   flex-direction: column;
   justify-content: space-around;
   background-color:rgb(32, 32, 32);
-  width: 520px;
-  height: 400px;
-  min-width: 300px;
+  
+  height: auto;
+  min-width: 450px;
+}
+.item{
+  
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 13px;
+  background-color: #0c0c0c;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 98%;
+  flex-shrink: 0;  /* não reduz o elemento de tamanho para caber dentro da div  */
+  height: auto;  
+  opacity: 0.6;
+  transition: all 600ms ease-in-out;
 }
 /*  carousel */
 .container {
+  flex-wrap: wrap;
   margin-top: 50px;
   border-radius: 12px;
   position: relative;
   padding: 15px;
-  max-width: 940px;
-  min-width: 600px;
+  width: 80%;
+  height: auto;
+ margin-bottom: 200px;
 }
 .gallery-wrapper{
   overflow-x:auto ;
@@ -212,9 +231,10 @@ div.gradient{
 .gallery{
   display: flex;
   flex-flow: row nowrap;
-  gap: 1rem;
+  gap: 5rem;
 }
 .arrow-left,
+
 .arrow-right{
   position: absolute;
   top: 0;
@@ -241,19 +261,6 @@ div.gradient{
 .arrow-right:hover {
   opacity: 1;
 }
-.item{
-  padding: 20px;
-  border-radius: 13px;
-  background-color: #0c0c0c;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 900px;
-  flex-shrink: 0;  /* não reduz o elemento de tamanho para caber dentro da div  */
-  height: 450px;  
-  opacity: 0.6;
-  transition: all 600ms ease-in-out;
-}
 .arrow-left{
   transform: rotate(180deg);
   background: linear-gradient(to left, transparent 0%, black 200%);
@@ -270,11 +277,13 @@ div.gradient{
     border-radius: 12px;
     position: relative;
     padding: 15px;
-    background-color: red;
+    width: 100%;
+   
   }
   .itenCarusel2{
+    width: 100%;
     border-radius: 12px;
-    padding: 20px;
+    
     color: lightgray;
     display: flex;
     flex-direction: column;
