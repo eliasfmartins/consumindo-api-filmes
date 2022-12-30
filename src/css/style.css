@@ -341,7 +341,7 @@ nav a{
   transition: 2ms ease-in;
   position: absolute;
   top: 23px;
-  left: 25px;
+  left: 5px;
   width: 55px;
   height: 30px;
   background-color: transparent;
@@ -372,7 +372,7 @@ nav a{
     border-radius:  22px 22px;
     display: flex;
     background-color: rgb(255, 255, 255);
-    width: 70vw;
+    width: 55vw;
     min-width: 340px;
     align-items: center;
     justify-content: space-between;
