@@ -236,6 +236,7 @@ div.gradient{
 }
 .arrow-left,
 .arrow-right{
+  z-index: 50;
   padding: 2%;
   position: absolute;
   top: 0;
@@ -289,7 +290,7 @@ nav a{
     flex-wrap: wrap;
   }
   .itenCarusel2{
-    width: 100%;
+    /* width: 100%; */
     border-radius: 12px;
     
     color: lightgray;
@@ -304,37 +305,61 @@ nav a{
   label{
     width: 90%;
   }
+  .container {
+    margin-top: 50px;
+    border-radius: 12px;
+    position: relative;
+    padding: 15px;
+    width: 99vw;
+    height: auto;
+   
+  }
+  .item{
+    flex-wrap: wrap;
+    background-color: red;
+  }
+  .itenCarusel2{
+    /* width:50%; */
+    border-radius: 12px;
+    
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgb(32, 32, 32);
+  }
 
+  nav.hidden a{
+    display: none;
+  } 
+  
+  button.mobile{
+    display: none;
+  transition: 2ms ease-in;
+  position: absolute;
+  top: 30px;
+  width: 55px;
+  height: 30px;
+  background-color: transparent;
+  }
+  button.mobile hr{
+    transition: 2s;
+    background-color: red;
+    padding: 5%;
+    border-radius: 5px;
+  }
+  button.mobile.active hr.hr2{
+  visibility: hidden;
+  }
+  button.mobile.active hr.hr1{
+    transform: rotate(405deg);
+    position: relative;
+    bottom: -23px;
+  }
+  button.mobile.active hr.hr3{
+    transform: rotate(-405deg);
+    position: relative;
+    top: -19px;
+  }
 }
- nav.hidden a{
-  display: none;
-} 
-
-button.mobile{
-  display: none;
-transition: 2ms ease-in;
-position: absolute;
-top: 30px;
-width: 55px;
-height: 30px;
-background-color: transparent;
-}
-button.mobile hr{
-  transition: 2s;
-  background-color: red;
-  padding: 5%;
-  border-radius: 5px;
-}
-button.mobile.active hr.hr2{
-visibility: hidden;
-}
-button.mobile.active hr.hr1{
-  transform: rotate(405deg);
-  position: relative;
-  bottom: -23px;
-}
-button.mobile.active hr.hr3{
-  transform: rotate(-405deg);
-  position: relative;
-  top: -19px;
-}
+ 
