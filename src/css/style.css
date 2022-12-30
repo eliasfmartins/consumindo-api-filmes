@@ -14,7 +14,7 @@ label{
   display: flex;
   background-color: rgb(255, 255, 255);
   width: 25rem;
-  min-width: 340px;
+  
   align-items: center;
   justify-content: space-between;
   height: 50px;
@@ -363,7 +363,7 @@ nav a{
   button.mobile.active hr.hr3{
     transform: rotate(-405deg);
     position: relative;
-    top: -19px;
+    top: -20px;
   }
   label{
     position: relative;
@@ -372,7 +372,7 @@ nav a{
     border-radius:  22px 22px;
     display: flex;
     background-color: rgb(255, 255, 255);
-    width: 55vw;
+    width: 75vw;
     min-width: 340px;
     align-items: center;
     justify-content: space-between;
@@ -387,6 +387,23 @@ nav a{
     border: none;
     width: 14rem;
     height: 40px;
+  }
+  nav.nav.active a{
+    background-color: wheat;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(3, 3, 1);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
   }
 }
  
