@@ -197,7 +197,7 @@ div.gradient{
   background-color:rgb(32, 32, 32);
   
   height: 400px;
-  min-width: 450px;
+  
 }
 .item{
   
@@ -290,7 +290,7 @@ nav a{
     flex-wrap: wrap;
   }
   .itenCarusel2{
-    /* width: 100%; */
+     width: 100%;
     border-radius: 12px;
     
     color: lightgray;
@@ -319,7 +319,7 @@ nav a{
     background-color: red;
   }
   .itenCarusel2{
-    width: 95%;
+    width: 100%;
     border-radius: 12px;
     
     color: lightgray;
