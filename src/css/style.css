@@ -32,6 +32,9 @@ input{
 #buscaFilme:focus{
 outline: none;
 }
+button.mobile{
+  visibility: hidden;
+}
 nav{
   gap: 1rem;
   display: flex;
@@ -302,9 +305,10 @@ nav a{
   
 } 
 @media (max-width:600px){
-  label{
-    width: 90%;
+  button.mobile{
+    visibility: visible;
   }
+  
   .container {
     margin-top: 50px;
     border-radius: 12px;
@@ -332,10 +336,6 @@ nav a{
     background-color:rgb(32, 32, 32);
   }
 
-  nav.hidden a{
-    display: none;
-  } 
-  
   button.mobile{
   border: transparent;
   transition: 2ms ease-in;
@@ -347,7 +347,6 @@ nav a{
   background-color: transparent;
   }
   button.mobile hr{
-    
     transition: 2s;
     background-color: red;
     padding: 5%;
@@ -373,7 +372,7 @@ nav a{
     border-radius:  22px 22px;
     display: flex;
     background-color: rgb(255, 255, 255);
-    width: 70%;
+    width: 70vw;
     min-width: 340px;
     align-items: center;
     justify-content: space-between;
