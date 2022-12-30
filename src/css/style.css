@@ -337,10 +337,10 @@ nav a{
   } 
   
   button.mobile{
-    display: none;
+    /* display: none; */
   transition: 2ms ease-in;
   position: absolute;
-  top: 30px;
+  top: 23px;
   width: 55px;
   height: 30px;
   background-color: transparent;
@@ -363,6 +363,29 @@ nav a{
     transform: rotate(-405deg);
     position: relative;
     top: -19px;
+  }
+  label{
+    position: relative;
+    left: 40px;
+    border: solid 1px lightgray;
+    border-radius:  22px 22px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 22rem;
+    min-width: 340px;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    margin: auto;
+  }
+  
+  input{
+    position: relative;
+    left: 10px;
+    padding: 2%;
+    border: none;
+    width: 14rem;
+    height: 40px;
   }
 }
  
