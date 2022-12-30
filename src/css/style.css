@@ -388,17 +388,18 @@ nav a{
     width: 14rem;
     height: 40px;
   }
-  nav.nav.active a{
+  nav.nav.hidden a{
     background-color: wheat;
-    display: inline-block;
+    display: block;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 0;
+    top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     color: rgb(3, 3, 1);
     position: fixed;
     width: 100vw;
