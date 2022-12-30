@@ -316,7 +316,7 @@ nav a{
   }
   .item{
     flex-wrap: wrap;
-    background-color: red;
+    /* background-color: red; */
   }
   .itenCarusel2{
     padding: 5%;
