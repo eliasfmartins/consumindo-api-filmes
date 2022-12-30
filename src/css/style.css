@@ -337,7 +337,7 @@ nav a{
   } 
   
   button.mobile{
-
+  border: transparent;
   transition: 2ms ease-in;
   position: absolute;
   top: 23px;
