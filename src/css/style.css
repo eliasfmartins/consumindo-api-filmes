@@ -373,7 +373,7 @@ nav a{
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 75vw;
-    min-width: 340px;
+   
     align-items: center;
     justify-content: space-between;
     height: 50px;
