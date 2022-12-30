@@ -337,15 +337,17 @@ nav a{
   } 
   
   button.mobile{
-    /* display: none; */
+
   transition: 2ms ease-in;
   position: absolute;
   top: 23px;
+  left: 25px;
   width: 55px;
   height: 30px;
   background-color: transparent;
   }
   button.mobile hr{
+    
     transition: 2s;
     background-color: red;
     padding: 5%;
