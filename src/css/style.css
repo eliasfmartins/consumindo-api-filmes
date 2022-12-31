@@ -412,7 +412,7 @@ div.gradient{
     /* z-index: 50; */
   }
   header{
-    position: fixed;
+    /* position: fixed; */
     z-index: 60;
   }
 }
