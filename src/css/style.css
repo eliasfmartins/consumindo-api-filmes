@@ -14,13 +14,11 @@ label{
   display: flex;
   background-color: rgb(255, 255, 255);
   width: 25rem;
-  
   align-items: center;
   justify-content: space-between;
   height: 50px;
   margin: auto;
 }
-
 input{
   position: relative;
   left: 10px;
@@ -276,9 +274,7 @@ div.gradient{
 .gallery-wrapper::-webkit-scrollbar{
   display: none;
 }
-nav a{
-  display: none;
-} 
+
 
 @media (max-width: 900px) {
   .container {
@@ -305,6 +301,10 @@ nav a{
   
 } 
 @media (max-width:600px){
+  nav a{
+    visibility: hidden;
+  } 
+
   button.mobile{
     visibility: visible;
   }
@@ -366,8 +366,8 @@ nav a{
     top: -20px;
   }
   label{
-    position: relative;
-    left: 40px;
+    position: absolute;
+    left: 80px;
     border: solid 1px lightgray;
     border-radius:  22px 22px;
     display: flex;
@@ -391,10 +391,12 @@ nav a{
   nav.nav button{
     z-index: 500;
   }
+   
   nav.nav.hidden a{
+    visibility: visible;
     background-color: rgb(0, 0, 0);
     display: block;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
