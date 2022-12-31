@@ -61,7 +61,6 @@ btnBusca.addEventListener('click',(e)=>{
   e.preventDefault();
   const inputValue = input.value
   searchMovieByName(inputValue);
-
   
 })
 home.addEventListener('click',(e)=>{
