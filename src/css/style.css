@@ -300,7 +300,7 @@ div.gradient{
   }
   
 } 
-@media (max-width:600px){
+@media (max-width:700px){
   nav a{
     visibility: hidden;
   } 
@@ -341,9 +341,10 @@ div.gradient{
   transition: 2ms ease-in;
   position: absolute;
   top: 23px;
-  left: 5px;
+  left: 15px;
   width: 55px;
-  height: 30px;
+  /* background-color: red; */
+  height: 60px;
   background-color: transparent;
   }
   button.mobile hr{
@@ -391,29 +392,31 @@ div.gradient{
   nav.nav button{
     z-index: 500;
   }
-   
-  nav.nav.hidden a{
-    visibility: visible;
-    background-color: rgb(0, 0, 0);
+  nav.nav.hidden{
     display: block;
-    position: relative;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     left: 0;
     right: 0;
     bottom: 0;
     top: 0;
+    z-index: 80;
+
+  } 
+  nav.nav.hidden a{
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 33vh;
+    visibility: visible;
+    background-color: rgb(0, 0, 0);
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    /* z-index: 50; */
-  }
-  header{
-    /* position: fixed; */
-    z-index: 60;
   }
 }
  

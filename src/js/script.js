@@ -10,8 +10,31 @@ const input = document.querySelector('#buscaFilme');
 const gallery = document.querySelector('.gallery');
 const home = document.querySelector('.home')
 const categoria = document.querySelector('.categoria');
+const tendencias = document.querySelector('.tendencias')
 const btn = document.querySelector('.mobile');
 const nav = document.querySelector('.nav');
+
+home.addEventListener(
+  'click',(e)=> {
+    btn.classList.remove('active');
+    nav.classList.remove('hidden');
+  }
+);
+tendencias.addEventListener(
+  'click',(e)=> {
+    btn.classList.remove('active');
+    nav.classList.remove('hidden');
+  }
+);
+categoria.addEventListener(
+  'click',(e)=> {
+    btn.classList.remove('active');
+    nav.classList.remove('hidden');
+  }
+)
+  
+
+  
 
 
 
@@ -34,7 +57,7 @@ btn.addEventListener('click', (e)=>{
 
 
 
-btnBusca.addEventListener('click', (e)=>{
+btnBusca.addEventListener('click',(e)=>{
   e.preventDefault();
   const inputValue = input.value
   searchMovieByName(inputValue);
