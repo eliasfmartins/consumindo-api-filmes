@@ -62,7 +62,11 @@ btnBusca.addEventListener('click',(e)=>{
   const inputValue = input.value
   searchMovieByName(inputValue);
   
-})
+});
+btnBusca.addEventListener('keypress', (e)=>
+console.log(e)
+
+)
 home.addEventListener('click',(e)=>{
   div.innerHTML=''
   filmes(url);

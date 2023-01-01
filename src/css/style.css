@@ -9,8 +9,8 @@ body,html{
   height: 100vh;
 }
 label{
-  position: relative;
-  left: 200px;
+  position: absolute;
+  right: 25px;
   border: solid 1px lightgray;
   border-radius:  22px 22px;
   display: flex;
