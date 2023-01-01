@@ -1,18 +1,21 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-body,html{
+
+body,
+html {
   width: 100vw;
   height: 100vh;
 }
-label{
+
+label {
   position: absolute;
   right: 25px;
   border: solid 1px lightgray;
-  border-radius:  22px 22px;
+  border-radius: 22px 22px;
   display: flex;
   background-color: rgb(255, 255, 255);
   width: 25rem;
@@ -21,7 +24,8 @@ label{
   height: 50px;
   margin: auto;
 }
-input{
+
+input {
   position: relative;
   left: 10px;
   padding: 2%;
@@ -29,19 +33,23 @@ input{
   width: auto;
   height: 40px;
 }
-#buscaFilme:focus{
-outline: none;
+
+#buscaFilme:focus {
+  outline: none;
 }
-button.mobile{
+
+button.mobile {
   visibility: hidden;
 }
-nav{
+
+nav {
   gap: 1rem;
   display: flex;
   align-items: center;
   height: 80px;
 }
-nav a{
+
+nav a {
   color: lightgray;
   font-size: larger;
   font-weight: 600;
@@ -52,29 +60,33 @@ nav a{
   border-bottom: 2px solid transparent;
   transition: 0.6s ease-in-out;
 }
-a:hover{
+
+a:hover {
   color: white;
   border-bottom: solid white 2px;
 }
-button.busca{
+
+button.busca {
   padding: 1%;
   font-size: 1rem;
   font-weight: 600;
   color: white;
   background-color: red;
   border: transparent;
-  height:100%;
+  height: 100%;
   width: 30%;
-  border-radius: 0  22px 22px 0;
+  border-radius: 0 22px 22px 0;
   cursor: pointer;
   transition: 0.6s;
 }
-button.busca:hover{
+
+button.busca:hover {
   color: rgb(255, 255, 255);
- background-color: rgb(216, 23, 23);
- border-bottom: 5px solid transparent;
+  background-color: #d81717;
+  border-bottom: 5px solid transparent;
 }
-div.cards{
+
+div.cards {
   padding: 1%;
   background-color: black;
   flex-wrap: wrap;
@@ -83,20 +95,24 @@ div.cards{
   justify-content: space-around;
   height: auto;
 }
-img{
-  border-radius: 12px 12px ;
+
+img {
+  border-radius: 12px 12px;
   height: 400px;
   width: 300px;
   border: solid lightgray 1px;
 }
-.dados h1{
+
+.dados h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-.dados p{
+
+.dados p {
   line-height: 1.6;
 }
-.dados{
+
+.dados {
   transition: 1s ease-in-out;
   opacity: 0;
   overflow-x: hidden;
@@ -108,24 +124,26 @@ img{
   color: #ffffff;
   height: 400px;
   width: 300px;
-  border-radius: 12px ;
+  border-radius: 12px;
   z-index: 10;
   overflow-x: hidden;
 }
-.dados:hover{
-   opacity: 1;
-   transition: 0.6 ease-in-out; 
-   padding: 15px;
-   position: absolute;
-   background-color: rgba(0, 0, 0, 0.6);
-   color: #ffffff;
-   height: 400px;
-   width: 300px;
-   border-radius: 12px ;
-   z-index: 10;
-   overflow-x: hidden;
-} 
-.card{
+
+.dados:hover {
+  opacity: 1;
+  transition: 0.6 ease-in-out;
+  padding: 15px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  height: 400px;
+  width: 300px;
+  border-radius: 12px;
+  z-index: 10;
+  overflow-x: hidden;
+}
+
+.card {
   row-gap: 0.5rem;
   text-align: center;
   display: flex;
@@ -137,19 +155,22 @@ img{
   padding: 1%;
   color: white;
 }
-.card img{
+
+.card img {
   position: relative;
   transition: 0.6s;
   z-index: 5;
 }
-.card img:hover{
+
+.card img:hover {
   position: relative;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   z-index: 5;
 }
-header{
+
+header {
   display: block;
   background: transparent;
   padding: 2%;
@@ -161,25 +182,24 @@ header{
   text-align: center;
 }
 
-.imagem{
+.imagem {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ac9aedf1-a687-4c5d-965c-2fc3eac84aea/b02b882e-4d72-4529-bad5-946a3c89faf3/BR-pt-20221206-popsignuptwoweeks-perspective_alpha_website_small.jpg);
-  
   background-size: cover;
 }
 
-
-.background{
+.background {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(black,transparent, black);
+  background-image: linear-gradient(black, transparent, black);
 }
-main{
+
+main {
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -188,29 +208,33 @@ main{
   height: auto;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ac9aedf1-a687-4c5d-965c-2fc3eac84aea/b02b882e-4d72-4529-bad5-946a3c89faf3/BR-pt-20221206-popsignuptwoweeks-perspective_alpha_website_small.jpg);
 }
-div.gradient{
+
+div.gradient {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(black,transparent, black);
+  background-image: linear-gradient(black, transparent, black);
 }
-.itenCarusel1{
+
+.itenCarusel1 {
   width: auto;
   height: auto;
 }
-.itenCarusel2{
+
+.itenCarusel2 {
   border-radius: 12px;
   padding: 20px;
   color: lightgray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color:rgb(32, 32, 32);
+  background-color: rgb(32, 32, 32);
   height: 400px;
 }
-.item{
+
+.item {
   /* flex-wrap: wrap; */
   gap: 1rem;
   padding: 20px;
@@ -220,11 +244,13 @@ div.gradient{
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  flex-shrink: 0;  /* não reduz o elemento de tamanho para caber dentro da div  */
-  height: auto;  
+  flex-shrink: 0;
+  /* não reduz o elemento de tamanho para caber dentro da div  */
+  height: auto;
   opacity: 0.6;
   transition: all 600ms ease-in-out;
 }
+
 /*  carousel */
 .container {
   flex-wrap: wrap;
@@ -234,18 +260,21 @@ div.gradient{
   padding: 15px;
   width: 80%;
   height: auto;
- margin-bottom: 200px;
+  margin-bottom: 200px;
 }
-.gallery-wrapper{
-  overflow-x:auto ;
+
+.gallery-wrapper {
+  overflow-x: auto;
 }
-.gallery{
+
+.gallery {
   display: flex;
   flex-flow: row nowrap;
   gap: 1rem;
 }
+
 .arrow-left,
-.arrow-right{
+.arrow-right {
   z-index: 50;
   padding: 2%;
   position: absolute;
@@ -264,25 +293,31 @@ div.gradient{
   opacity: 0.1;
   transition: all 600ms ease-in-out;
 }
+
 .arrow-right {
   left: auto;
   right: 0;
   background: linear-gradient(to right, transparent 0%, black 200%);
 }
+
 .arrow-left:hover,
 .arrow-right:hover {
   opacity: 1;
 }
-.arrow-left{
+
+.arrow-left {
   transform: rotate(180deg);
   background: linear-gradient(to left, transparent 0%, black 200%);
 }
-.current-item{
+
+.current-item {
   opacity: 1;
 }
-.gallery-wrapper::-webkit-scrollbar{
+
+.gallery-wrapper::-webkit-scrollbar {
   display: none;
 }
+
 @media (max-width: 900px) {
   .container {
     margin-top: 50px;
@@ -291,29 +326,31 @@ div.gradient{
     padding: 15px;
     width: 99vw;
   }
-  .item{
+
+  .item {
     flex-wrap: wrap;
   }
-  .itenCarusel2{
-     width: 100%;
+
+  .itenCarusel2 {
+    width: 100%;
     border-radius: 12px;
     color: lightgray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color:rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
   }
-  
-} 
-@media (max-width:700px){
-  nav a{
-    visibility: hidden;
-  } 
+}
 
-  button.mobile{
+@media (max-width:700px) {
+  nav a {
+    visibility: hidden;
+  }
+
+  button.mobile {
     visibility: visible;
   }
-  
+
   .container {
     margin-top: 50px;
     border-radius: 12px;
@@ -321,72 +358,75 @@ div.gradient{
     padding: 15px;
     width: 99vw;
     height: auto;
-   
   }
-  .item{
+
+  .item {
     flex-wrap: wrap;
     /* background-color: red; */
   }
-  .itenCarusel2{
+
+  .itenCarusel2 {
     padding: 5%;
     width: 90vh;
     height: auto;
-    
     border-radius: 12px;
-    
     color: lightgray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color:rgb(32, 32, 32);
+    background-color: rgb(32, 32, 32);
   }
 
-  button.mobile{
-  border: transparent;
-  transition: 2ms ease-in;
-  position: absolute;
-  top: 20px;
-  left: 15px;
-  width: 55px;
-  /* background-color: red; */
-  height: 60px;
-  background-color: transparent;
+  button.mobile {
+    border: transparent;
+    transition: 2ms ease-in;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 55px;
+    /* background-color: red; */
+    height: 60px;
+    background-color: transparent;
   }
-  button.mobile hr{
+
+  button.mobile hr {
     transition: 2s;
     background-color: red;
     padding: 5%;
     border-radius: 5px;
   }
-  button.mobile.active hr.hr2{
-  visibility: hidden;
+
+  button.mobile.active hr.hr2 {
+    visibility: hidden;
   }
-  button.mobile.active hr.hr1{
+
+  button.mobile.active hr.hr1 {
     transform: rotate(405deg);
     position: relative;
     bottom: -23px;
   }
-  button.mobile.active hr.hr3{
+
+  button.mobile.active hr.hr3 {
     transform: rotate(-405deg);
     position: relative;
     top: -20px;
   }
-  label{
+
+  label {
     position: absolute;
     left: 80px;
     border: solid 1px lightgray;
-    border-radius:  22px 22px;
+    border-radius: 22px 22px;
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 75vw;
-   
     align-items: center;
     justify-content: space-between;
     height: 50px;
     margin: auto;
   }
-  
-  input{
+
+  input {
     position: relative;
     left: 10px;
     padding: 2%;
@@ -394,10 +434,12 @@ div.gradient{
     width: 12rem;
     height: 40px;
   }
-  nav.nav button{
+
+  nav.nav button {
     z-index: 500;
   }
-  nav.nav.hidden{
+
+  nav.nav.hidden {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -410,10 +452,9 @@ div.gradient{
     top: 0;
     z-index: 80;
     gap: 5rem;
-    
+  }
 
-  } 
-  nav.nav.hidden a{
+  nav.nav.hidden a {
     margin-top: 50px;
     align-items: center;
     justify-content: center;
@@ -430,8 +471,8 @@ div.gradient{
     border-bottom: solid transparent 2px;
     transition: 0.6s ease-in-out;
   }
-  nav.nav.hidden a:hover{
+
+  nav.nav.hidden a:hover {
     border-bottom: solid white 2px;
   }
 }
- 
