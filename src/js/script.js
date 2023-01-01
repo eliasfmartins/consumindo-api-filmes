@@ -63,8 +63,13 @@ btnBusca.addEventListener('click',(e)=>{
   searchMovieByName(inputValue);
   
 });
-btnBusca.addEventListener('keypress', (e)=>
-console.log(e)
+input.addEventListener('keypress', e => {
+  const inputValue = input.value
+  if(e.keyCode === 13) {
+    searchMovieByName(inputValue);
+  }
+}
+
 
 )
 home.addEventListener('click',(e)=>{
@@ -204,7 +209,7 @@ const isLeft = control.classList.contains('arrow-left');
         //items[currentItem].scrollIntoView({
         //vai tentar deixar o intem da vez no centro correspondente ao curreitem
         inline: "center",
-           //  behavior: "smooth",
+        // behavior: "smooth", so funfa na tela fullscreen por alguma razão buga quando  em versão mobile 
       });
       items[currentItem].classList.add('current-item')
 })
