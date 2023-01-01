@@ -67,6 +67,7 @@ input.addEventListener('keypress', e => {
   const inputValue = input.value
   if(e.keyCode === 13) {
     searchMovieByName(inputValue);
+    input.value.innerHTML=''
   }
 }
 

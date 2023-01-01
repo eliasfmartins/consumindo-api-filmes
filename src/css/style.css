@@ -208,12 +208,9 @@ div.gradient{
   flex-direction: column;
   justify-content: space-around;
   background-color:rgb(32, 32, 32);
-  
   height: 400px;
-  
 }
 .item{
-  
   /* flex-wrap: wrap; */
   gap: 1rem;
   padding: 20px;
@@ -286,8 +283,6 @@ div.gradient{
 .gallery-wrapper::-webkit-scrollbar{
   display: none;
 }
-
-
 @media (max-width: 900px) {
   .container {
     margin-top: 50px;
@@ -295,7 +290,6 @@ div.gradient{
     position: relative;
     padding: 15px;
     width: 99vw;
-   
   }
   .item{
     flex-wrap: wrap;
@@ -303,7 +297,6 @@ div.gradient{
   .itenCarusel2{
      width: 100%;
     border-radius: 12px;
-    
     color: lightgray;
     display: flex;
     flex-direction: column;
@@ -352,7 +345,7 @@ div.gradient{
   border: transparent;
   transition: 2ms ease-in;
   position: absolute;
-  top: 23px;
+  top: 20px;
   left: 15px;
   width: 55px;
   /* background-color: red; */
