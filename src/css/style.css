@@ -111,6 +111,10 @@ img {
 .dados p {
   line-height: 1.6;
 }
+.dados::-webkit-scrollbar {
+  width: 12px;              
+  /* pra ficar com scrooll invi mas ainda tala */
+}
 .scroll{
   overflow: scroll;
 }
