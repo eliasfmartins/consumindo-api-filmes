@@ -31,13 +31,6 @@ btn.addEventListener("click", (e) => {
   btn.classList.toggle("active");
   nav.classList.toggle("hidden");
 });
-// const cardsFIlmes = document.querySelector('.card');
-
-// cardsFIlmes.addEventListener('click', (e)=>{
-//   // cardsFIlmes.
-//  cardsFIlmes.classList.add('adc')
-
-// })
 
 btnBusca.addEventListener("click", (e) => {
   e.preventDefault();
@@ -145,9 +138,20 @@ function createMovieCard(data) {
 filmes(url);
 // carousel
 const controls = document.querySelectorAll(".control");
-let currentItem = 0;
 const items = document.querySelectorAll(".item");
+let currentItem = 0;
 const maxItems = items.length;
+window.onload = function(){
+  setInterval(function(){
+    currentItem++
+    if(currentItem >= maxItems){
+      currentItem = 0
+    }
+    items[currentItem].scrollIntoView({block: "end", inline: "nearest"});
+    items[currentItem].classList.add("current-item");
+    
+  },1500)
+}
 
 controls.forEach((control) => {
   control.addEventListener("click", () => {
@@ -155,29 +159,21 @@ controls.forEach((control) => {
 
     if (isLeft) {
       currentItem -= 1;
-   
     } else {
       currentItem += 1;
-
     }
-
     if (currentItem >= maxItems) {
       currentItem = 0;
-    
     }
     if (currentItem < 0) {
       currentItem = maxItems - 1;
-     
     }
     items.forEach((item) => item.classList.remove("current-item"));
-  
-
-    items[currentItem].scrollIntoView({
-      behavior:"smooth", block: "end", inline:"nearest"
-    });
-    //vai tentar deixar o intem da vez no centro correspondente ao curreitem
-    // so funfa na tela fullscreen por alguma razão buga quando  em versão mobile
+    items[currentItem].scrollIntoView({block: "end", inline: "nearest"});
     items[currentItem].classList.add("current-item");
-   
+    
   });
 });
+//vai tentar deixar o intem da vez no centro correspondente ao curreitem
+// so funfa na tela fullscreen por alguma razão buga quando  em versão mobile
+
