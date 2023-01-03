@@ -4,13 +4,11 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 body,
 html {
   width: 100vw;
   height: 100vh;
 }
-
 label {
   position: absolute;
   right: 25px;
@@ -24,7 +22,6 @@ label {
   height: 50px;
   margin: auto;
 }
-
 input {
   position: relative;
   left: 10px;
@@ -33,22 +30,18 @@ input {
   width: auto;
   height: 40px;
 }
-
 #buscaFilme:focus {
   outline: none;
 }
-
 button.mobile {
   visibility: hidden;
 }
-
 nav {
   gap: 1rem;
   display: flex;
   align-items: center;
   height: 80px;
 }
-
 nav a {
   color: lightgray;
   font-size: larger;
@@ -60,13 +53,11 @@ nav a {
   border-bottom: 2px solid transparent;
   transition: 0.6s ease-in-out;
 }
-
 a:hover {
   color: white;
   border-bottom: solid white 2px;
 }
-
-button.busca {
+.busca {
   padding: 1%;
   font-size: 1rem;
   font-weight: 600;
@@ -79,13 +70,11 @@ button.busca {
   cursor: pointer;
   transition: 0.6s;
 }
-
 button.busca:hover {
   color: rgb(255, 255, 255);
   background-color: #d81717;
   border-bottom: 5px solid transparent;
 }
-
 div.cards {
   padding: 1%;
   background-color: black;
@@ -95,19 +84,16 @@ div.cards {
   justify-content: space-around;
   height: auto;
 }
-
 img {
   border-radius: 12px 12px;
   height: 400px;
   width: 300px;
   border: solid lightgray 1px;
 }
-
 .dados h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
 .dados p {
   line-height: 1.6;
 }
@@ -123,7 +109,6 @@ img {
   opacity: 0;
   overflow-x: hidden;
   transition: 0.6 ease-in-out;
-  
   padding: 15px;
   position: absolute;
   background-color: rgb(0, 0, 0);
@@ -134,7 +119,6 @@ img {
   z-index: 10;
   overflow-x: hidden;
 }
-
 .dados:hover {
   opacity: 1;
   transition: 0.6 ease-in-out;
@@ -148,7 +132,6 @@ img {
   z-index: 10;
   overflow-x: hidden;
 }
-
 .card {
   row-gap: 0.5rem;
   text-align: center;
@@ -161,13 +144,11 @@ img {
   padding: 1%;
   color: white;
 }
-
 .card img {
   position: relative;
   transition: 0.6s;
   z-index: 5;
 }
-
 .card img:hover {
   position: relative;
   -moz-transform: scale(1.1);
@@ -175,7 +156,6 @@ img {
   transform: scale(1.1);
   z-index: 5;
 }
-
 header {
   display: block;
   background: transparent;
@@ -187,7 +167,6 @@ header {
   display: flex;
   text-align: center;
 }
-
 .imagem {
   background-repeat: no-repeat;
   width: 100%;
@@ -195,7 +174,6 @@ header {
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ac9aedf1-a687-4c5d-965c-2fc3eac84aea/b02b882e-4d72-4529-bad5-946a3c89faf3/BR-pt-20221206-popsignuptwoweeks-perspective_alpha_website_small.jpg);
   background-size: cover;
 }
-
 .background {
   display: flex;
   align-items: flex-start;
@@ -204,7 +182,6 @@ header {
   width: 100%;
   background-image: linear-gradient(black, transparent, black);
 }
-
 main {
   flex-direction: column;
   display: flex;
@@ -214,7 +191,6 @@ main {
   height: auto;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/ac9aedf1-a687-4c5d-965c-2fc3eac84aea/b02b882e-4d72-4529-bad5-946a3c89faf3/BR-pt-20221206-popsignuptwoweeks-perspective_alpha_website_small.jpg);
 }
-
 div.gradient {
   display: flex;
   align-items: center;
@@ -223,12 +199,10 @@ div.gradient {
   height: 100%;
   background-image: linear-gradient(black, transparent, black);
 }
-
 .itenCarusel1 {
   width: auto;
   height: auto;
 }
-
 .itenCarusel2 {
   border-radius: 12px;
   padding: 20px;
@@ -239,7 +213,6 @@ div.gradient {
   background-color: rgb(32, 32, 32);
   height: 400px;
 }
-
 .item {
   /* flex-wrap: wrap; */
   gap: 1rem;
@@ -256,7 +229,6 @@ div.gradient {
   opacity: 0.6;
   transition: all 600ms ease-in-out;
 }
-
 /*  carousel */
 .container {
   flex-wrap: wrap;
@@ -268,17 +240,14 @@ div.gradient {
   height: auto;
   margin-bottom: 200px;
 }
-
 .gallery-wrapper {
   overflow-x: auto;
 }
-
 .gallery {
   display: flex;
   flex-flow: row nowrap;
   gap: 1rem;
 }
-
 .arrow-left,
 .arrow-right {
   z-index: 50;
@@ -299,31 +268,25 @@ div.gradient {
   opacity: 0.1;
   transition: all 600ms ease-in-out;
 }
-
 .arrow-right {
   left: auto;
   right: 0;
   background: linear-gradient(to right, transparent 0%, black 200%);
 }
-
 .arrow-left:hover,
 .arrow-right:hover {
   opacity: 1;
 }
-
 .arrow-left {
   transform: rotate(180deg);
   background: linear-gradient(to left, transparent 0%, black 200%);
 }
-
 .current-item {
   opacity: 1;
 }
-
 .gallery-wrapper::-webkit-scrollbar {
   display: none;
 }
-
 @media (max-width: 900px) {
   .container {
     margin-top: 50px;
@@ -332,11 +295,9 @@ div.gradient {
     padding: 15px;
     width: 99vw;
   }
-
   .item {
     flex-wrap: wrap;
   }
-
   .itenCarusel2 {
     width: 100%;
     border-radius: 12px;
@@ -347,16 +308,13 @@ div.gradient {
     background-color: rgb(32, 32, 32);
   }
 }
-
 @media (max-width:700px) {
   nav a {
     visibility: hidden;
   }
-
   button.mobile {
     visibility: visible;
   }
-
   .container {
     margin-top: 50px;
     border-radius: 12px;
@@ -365,12 +323,10 @@ div.gradient {
     width: 99vw;
     height: auto;
   }
-
   .item {
     flex-wrap: wrap;
     /* background-color: red; */
   }
-
   .itenCarusel2 {
     padding: 5%;
     width: 90vh;
@@ -382,7 +338,6 @@ div.gradient {
     justify-content: space-around;
     background-color: rgb(32, 32, 32);
   }
-
   button.mobile {
     border: transparent;
     transition: 2ms ease-in;
@@ -394,30 +349,25 @@ div.gradient {
     height: 60px;
     background-color: transparent;
   }
-
   button.mobile hr {
     transition: 2s;
     background-color: red;
     padding: 5%;
     border-radius: 5px;
   }
-
   button.mobile.active hr.hr2 {
     visibility: hidden;
   }
-
   button.mobile.active hr.hr1 {
     transform: rotate(405deg);
     position: relative;
     bottom: -23px;
   }
-
   button.mobile.active hr.hr3 {
     transform: rotate(-405deg);
     position: relative;
     top: -20px;
   }
-
   label {
     position: absolute;
     left: 80px;
@@ -431,7 +381,6 @@ div.gradient {
     height: 50px;
     margin: auto;
   }
-
   input {
     position: relative;
     left: 10px;
@@ -440,11 +389,9 @@ div.gradient {
     width: 12rem;
     height: 40px;
   }
-
   nav.nav button {
     z-index: 500;
   }
-
   nav.nav.hidden {
     display: flex;
     flex-direction: column;
@@ -459,7 +406,6 @@ div.gradient {
     z-index: 80;
     gap: 5rem;
   }
-
   nav.nav.hidden a {
     margin-top: 50px;
     align-items: center;
@@ -477,7 +423,6 @@ div.gradient {
     border-bottom: solid transparent 2px;
     transition: 0.6s ease-in-out;
   }
-
   nav.nav.hidden a:hover {
     border-bottom: solid white 2px;
   }
