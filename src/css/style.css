@@ -218,7 +218,7 @@ div.gradient {
   gap: 1rem;
   padding: 20px;
   border-radius: 13px;
-  background-color: #0c0c0c;
+  background-color: #0c0c0c90;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -226,7 +226,7 @@ div.gradient {
   flex-shrink: 0;
   /* não reduz o elemento de tamanho para caber dentro da div  */
   height: auto;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: all 600ms ease-in-out;
 }
 /*  carousel */
@@ -250,7 +250,6 @@ div.gradient {
 }
 .arrow-left,
 .arrow-right {
-  z-index: 50;
   padding: 2%;
   position: absolute;
   top: 0;
@@ -258,7 +257,6 @@ div.gradient {
   right: auto;
   bottom: 0;
   font-size: 20px;
-  line-height: 250px;
   width: 40px;
   text-align: center;
   color: white;

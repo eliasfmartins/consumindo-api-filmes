@@ -170,15 +170,13 @@ controls.forEach((control) => {
      
     }
     items.forEach((item) => item.classList.remove("current-item"));
-    // console.log(currentItem);
+  
 
     items[currentItem].scrollIntoView({
-      //items[currentItem].scrollIntoView({
-      //vai tentar deixar o intem da vez no centro correspondente ao curreitem
-      inline: "center",
-      // behavior: "smooth", 
-      // so funfa na tela fullscreen por alguma razão buga quando  em versão mobile
+      behavior:"smooth", block: "end", inline:"nearest"
     });
+    //vai tentar deixar o intem da vez no centro correspondente ao curreitem
+    // so funfa na tela fullscreen por alguma razão buga quando  em versão mobile
     items[currentItem].classList.add("current-item");
    
   });
