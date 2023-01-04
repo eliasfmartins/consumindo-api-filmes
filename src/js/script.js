@@ -140,6 +140,29 @@ filmes(url);
 
 let counter = 1
 document.getElementById("radio1").checked = true;
+let div1 = document.querySelector(".auto-btn1")
+let div2 = document.querySelector(".auto-btn2")
+let div3 = document.querySelector(".auto-btn3")
+let div4 = document.querySelector(".auto-btn4")
+let div5 = document.querySelector(".auto-btn5")
+
+div1.addEventListener('click', e=>{
+  document.getElementById("radio1").checked = true;
+})
+div2.addEventListener('click', e=>{
+  document.getElementById("radio2").checked = true;
+})
+div3.addEventListener('click', e=>{
+  document.getElementById("radio3").checked = true;
+})
+div4.addEventListener('click', e=>{
+  document.getElementById("radio4").checked = true;
+})
+div5.addEventListener('click', e=>{
+  document.getElementById("radio5").checked = true;
+})
+
+
 
 setInterval( function(){
   nextSlide();
