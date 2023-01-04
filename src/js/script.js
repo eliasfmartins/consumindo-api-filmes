@@ -7,7 +7,7 @@ const img = "https://image.tmdb.org/t/p";
 const tamanho = "w300";
 const btnBusca = document.querySelector(".busca");
 const input = document.querySelector("#buscaFilme");
-const gallery = document.querySelector(".gallery");
+const slides = document.querySelector(".slides");
 const home = document.querySelector(".home");
 const categoria = document.querySelector(".categoria");
 const tendencias = document.querySelector(".tendencias");
@@ -73,7 +73,7 @@ createCarousel = (data) => {
     const left = document.createElement("div");
     const rigth = document.createElement("div");
     item.innerHTML = "";
-    gallery.appendChild(item);
+    slides.appendChild(item);
     item.appendChild(left);
     item.appendChild(rigth);
     left.classList.add("itenCarusel1");
@@ -137,43 +137,17 @@ function createMovieCard(data) {
 
 filmes(url);
 // carousel
-const controls = document.querySelectorAll(".control");
-const items = document.querySelectorAll(".item");
-let currentItem = 0;
-const maxItems = items.length;
-// window.onload = function(){
-//   setInterval(function(){
-//     currentItem++
-//     if(currentItem >= maxItems){
-//       currentItem = 0
-//     }
-//     items[currentItem].scrollIntoView({block: "end", inline: "nearest"});
-//     items[currentItem].classList.add("current-item");
-    
-//   },1500)
-// }
 
-controls.forEach((control) => {
-  control.addEventListener("click", () => {
-    const isLeft = control.classList.contains("arrow-left");
+let counter = 1
+document.getElementById("radio1").checked = true;
 
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-    items.forEach((item) => item.classList.remove("current-item"));
-    items[currentItem].scrollIntoView({block: "end", inline: "nearest"});
-    items[currentItem].classList.add("current-item");
-    
-  });
-});
-//vai tentar deixar o intem da vez no centro correspondente ao curreitem
-// so funfa na tela fullscreen por alguma razão buga quando  em versão mobile
-
+setInterval( function(){
+  nextSlide();
+},3000);
+function nextSlide(){
+  counter++;
+  if(counter>5){
+    counter =1
+  }
+  document.getElementById("radio"+counter).checked = true;
+}

@@ -9,7 +9,7 @@ html {
   width: 100vw;
   height: 100vh;
 }
-label {
+label.firstlabel {
   position: absolute;
   right: 25px;
   border: solid 1px lightgray;
@@ -22,7 +22,116 @@ label {
   height: 50px;
   margin: auto;
 }
-input {
+.slider{
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+}
+.slides{
+  align-items: center;
+  position: relative;
+  width: 500%;
+  height: auto;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide.item{
+  width: 20%;
+  /* position: relative; */
+  transition: 2s;
+}
+/* .slide img{
+  width: 800px;
+} */
+ 
+.manual-navigation{
+  display: flex;
+
+  height: auto;
+  position: absolute;
+  top: 10;
+  width: 100vw;
+  align-items: center;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background-color: #fff;
+}
+#radio1:checked~.first{
+margin-left: 0;
+}
+#radio2:checked~.first{
+margin-left: -20%;
+}
+#radio3:checked~.first{
+margin-left: -40%;
+}
+#radio4:checked~.first{
+margin-left: -60%;
+}
+#radio5:checked~.first{
+margin-left: -80%;
+}
+.navigation-auto div{
+  border: 2px solid #f4f5f7;
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.6s;
+  position: relative;
+  bottom: 100;
+
+
+}
+.navigation-auto{
+  
+ 
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+ 
+  display: flex;
+  justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+#radio1:checked ~.navigation-auto .auto-btn1{
+  background-color: #fff;
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+  background-color: #fff;
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+  background-color: #fff;
+}
+#radio4:checked ~.navigation-auto .auto-btn4{
+  background-color: #fff;
+}
+#radio5:checked ~.navigation-auto .auto-btn5{
+  background-color: #fff;
+}
+
+
+input.fazerBusca {
   position: relative;
   left: 10px;
   padding: 2%;
@@ -366,7 +475,7 @@ div.gradient {
     position: relative;
     top: -20px;
   }
-  label {
+  label.firstlabel {
     position: absolute;
     left: 80px;
     border: solid 1px lightgray;
