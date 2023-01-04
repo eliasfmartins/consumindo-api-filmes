@@ -392,18 +392,12 @@ div.gradient {
   display: none;
 }
 @media (max-width: 900px) {
-  .container {
-    margin-top: 50px;
-    border-radius: 12px;
-    position: relative;
-    padding: 15px;
-    width: 99vw;
-  }
   .item {
     flex-wrap: wrap;
   }
   .itenCarusel2 {
     width: 100%;
+    height: 95%;
     border-radius: 12px;
     color: lightgray;
     display: flex;
@@ -425,7 +419,7 @@ div.gradient {
     position: relative;
     padding: 15px;
     width: 99vw;
-    height: auto;
+    height: 90vh;
   }
   .item {
     flex-wrap: wrap;
@@ -433,8 +427,8 @@ div.gradient {
   }
   .itenCarusel2 {
     padding: 5%;
-    width: 90vh;
-    height: auto;
+    width: 90vw;
+    height: 90vh;
     border-radius: 12px;
     color: lightgray;
     display: flex;
