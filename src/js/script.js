@@ -166,7 +166,7 @@ div5.addEventListener('click', e=>{
 
 setInterval( function(){
   nextSlide();
-},3000);
+},7000);
 function nextSlide(){
   counter++;
   if(counter>5){
