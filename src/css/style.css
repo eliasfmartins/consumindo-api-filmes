@@ -50,10 +50,11 @@ label.firstlabel {
 .manual-navigation{
   display: flex;
   height: auto;
-  position: absolute;
+  position: relative;
   width: 100vw;
+  height: 50px;
   justify-content: center;
-  bottom: 21px;
+  align-items: center;
 }
 .manual-btn{
   display: none;
@@ -83,6 +84,12 @@ margin-left: -60%;
 }
 #radio5:checked~.first{
 margin-left: -80%;
+}
+.navigation-auto{
+  display: flex;
+  
+  width: 90%;
+  height: 40%;
 }
 .navigation-auto div{
   border: 2px solid #f4f5f7;
