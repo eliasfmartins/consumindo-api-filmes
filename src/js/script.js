@@ -141,17 +141,17 @@ const controls = document.querySelectorAll(".control");
 const items = document.querySelectorAll(".item");
 let currentItem = 0;
 const maxItems = items.length;
-window.onload = function(){
-  setInterval(function(){
-    currentItem++
-    if(currentItem >= maxItems){
-      currentItem = 0
-    }
-    items[currentItem].scrollIntoView({block: "end", inline: "nearest"});
-    items[currentItem].classList.add("current-item");
+// window.onload = function(){
+//   setInterval(function(){
+//     currentItem++
+//     if(currentItem >= maxItems){
+//       currentItem = 0
+//     }
+//     items[currentItem].scrollIntoView({block: "end", inline: "nearest"});
+//     items[currentItem].classList.add("current-item");
     
-  },1500)
-}
+//   },1500)
+// }
 
 controls.forEach((control) => {
   control.addEventListener("click", () => {
