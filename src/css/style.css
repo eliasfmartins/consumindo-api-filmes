@@ -164,6 +164,7 @@ a:hover {
   border-bottom: solid white 2px;
 }
 a.busca {
+  text-decoration: none;
   padding: 1%;
   font-size: 1rem;
   font-weight: 600;
@@ -176,9 +177,8 @@ a.busca {
   cursor: pointer;
   transition: 0.6s;
 }
-a.busca:hover {
+a.busca:hover{
   color: rgb(255, 255, 255);
-  background-color: #d81717;
   border-bottom: 5px solid transparent;
 }
 div.cards {
