@@ -31,18 +31,25 @@ btn.addEventListener("click", (e) => {
   btn.classList.toggle("active");
   nav.classList.toggle("hidden");
 });
+if(document.onresize)
 
 btnBusca.addEventListener("click", (e) => {
   e.preventDefault();
   const inputValue = input.value;
   searchMovieByName(inputValue);
+  window.location.href='#card';
 });
+
+btnBusca.addEventListener
 input.addEventListener("keypress", (e) => {
   const inputValue = input.value;
   if (e.keyCode === 13) {
     searchMovieByName(inputValue);
     input.value.innerHTML = "";
   }
+  if(e.keyCode == 13){
+    window.location.href='#card';
+  };
 });
 home.addEventListener("click", (e) => {
   div.innerHTML = "";
