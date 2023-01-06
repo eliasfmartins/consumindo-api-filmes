@@ -37,8 +37,9 @@ btnBusca.addEventListener("click", (e) => {
   e.preventDefault();
   const inputValue = input.value;
   searchMovieByName(inputValue);
-  window.location.href='#card';
+  window.location.href='#card';  
 });
+
 
 btnBusca.addEventListener
 input.addEventListener("keypress", (e) => {
@@ -168,7 +169,6 @@ div4.addEventListener('click', e=>{
 div5.addEventListener('click', e=>{
   document.getElementById("radio5").checked = true;
 })
-
 
 
 setInterval( function(){
