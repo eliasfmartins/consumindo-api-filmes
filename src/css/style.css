@@ -163,7 +163,7 @@ a:hover {
   color: white;
   border-bottom: solid white 2px;
 }
-a.busca {
+button.busca {
   text-decoration: none;
   padding: 1%;
   font-size: 1rem;
@@ -179,7 +179,7 @@ a.busca {
 }
 a.busca:hover{
   color: rgb(255, 255, 255);
-  border-bottom: 5px solid transparent;
+  /* border-bottom: 5px solid transparent; */
 }
 div.cards {
   padding: 1%;
