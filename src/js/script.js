@@ -1,5 +1,5 @@
 const url =
-  "https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR";
+  "https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=1";
 const urlCategorias =
   "https://api.themoviedb.org/3/genre/movie/list?api_key=17cee563809b303918f439483a696deb&language=pt-BR";
 const div = document.querySelector(".cards");
@@ -13,6 +13,41 @@ const categoria = document.querySelector(".categoria");
 const tendencias = document.querySelector(".tendencias");
 const btn = document.querySelector(".mobile");
 const nav = document.querySelector(".nav");
+const more = document.querySelector('.moreMovies');
+let page = 1
+const numeropage = document.querySelector('.pag')
+const btnPageNext = document.querySelector('.next')
+const btnPagepreve = document.querySelector('.prev')
+
+
+// numeropage.innerHTML=page
+
+btnPageNext.addEventListener('click', async e=>{
+  e.preventDefault()
+  page++
+  numeropage.innerHTML=page
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=${page}`
+  )
+  const data = await response.json();
+  div.innerHTML = "";
+  createMovieCard(data);
+  window.location.href='#card';
+})
+btnPagepreve.addEventListener('click',async e=>{
+  console.log()
+  e.preventDefault()
+  if(page>=2)
+  page--
+  numeropage.innerHTML=page
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=${page}`
+  )
+  const data = await response.json();
+  div.innerHTML = "";
+  createMovieCard(data);
+  window.location.href='#card';
+})
 
 home.addEventListener("click", (e) => {
   btn.classList.remove("active");
@@ -37,12 +72,12 @@ botaopesquisa.addEventListener('click', e =>{
    searchMovieByName(inputValue);
    window.location.href='#card'; 
  });
-document.addEventListener('click', e=>{
-  const targent = e.target
-  if(targent.classList.contains("btn-busca")){
-    console.log('foi')
-  }
- console.log(targent)})
+// document.addEventListener('click', e=>{
+//   const targent = e.target
+//   if(targent.classList.contains("btn-busca")){
+//     console.log('foi')
+//   }
+//  console.log(targent)})
 // botaopesquisa.addEventListener('click', e=>{
 //   const  targent = e.target
 //   al
@@ -106,7 +141,7 @@ createCarousel = (data) => {
 
 async function searchMovieByName(name) {
   if (!name) {
-    alert("Dados invalidos Preenchar o formulario e envie novamente ");
+    alert("Dados invalidos Preencha o formulario e envie novamente ");
     div.innerHTML = "";
     filmes(url);
     return;

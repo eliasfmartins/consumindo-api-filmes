@@ -177,7 +177,7 @@ a:hover {
   cursor: pointer;
   transition: 0.6s;
 } */
-.btn-busca{
+.busca{
   z-index: 10000;
   text-decoration: none;
   padding: 1%;
@@ -189,6 +189,44 @@ a:hover {
   height: 100%;
   width: 30%;
   border-radius: 0 22px 22px 0;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.more{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+
+  margin: auto;
+  background-color: black;
+}
+button.int{
+  /* z-index: 10000; */
+  text-decoration: none;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: red;
+  border: transparent;
+  height: 100%;
+  width: 30%;
+  border-radius: 22px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+button.pag{
+  text-decoration: none;
+  padding: 1%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: red;
+  border: transparent;
+  height: 100%;
+  width: 30%;
+  border-radius: 22px;
   cursor: pointer;
   transition: 0.6s;
 }
