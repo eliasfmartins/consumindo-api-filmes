@@ -5,7 +5,7 @@ const urlCategorias =
 const div = document.querySelector(".cards");
 const img = "https://image.tmdb.org/t/p";
 const tamanho = "w300";
-const btnBusca = document.querySelector(".busca");
+const botaopesquisa = document.querySelector('.btn-busca');
 const input = document.querySelector("#buscaFilme");
 const slides = document.querySelector(".slides");
 const home = document.querySelector(".home");
@@ -31,22 +31,30 @@ btn.addEventListener("click", (e) => {
   btn.classList.toggle("active");
   nav.classList.toggle("hidden");
 });
-if(document.onresize)
+botaopesquisa.addEventListener('click', e =>{
+   console.log('cheguei nessa kasseta')
+   const inputValue = input.value;
+   searchMovieByName(inputValue);
+   window.location.href='#card'; 
+ });
+document.addEventListener('click', e=>{
+  const targent = e.target
+  if(targent.classList.contains("btn-busca")){
+    console.log('foi')
+  }
+ console.log(targent)})
+// botaopesquisa.addEventListener('click', e=>{
+//   const  targent = e.target
+//   al
+// })
 
-btnBusca.addEventListener("click", (e) => {
-  e.preventDefault();
-  const inputValue = input.value;
-  searchMovieByName(inputValue);
-  window.location.href='#card';  
-});
 
 
-btnBusca.addEventListener
 input.addEventListener("keypress", (e) => {
   const inputValue = input.value;
   if (e.keyCode === 13) {
     searchMovieByName(inputValue);
-    input.value.innerHTML = "";
+    input.innerHTML = "";
   }
   if(e.keyCode == 13){
     window.location.href='#card';
