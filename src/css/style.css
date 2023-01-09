@@ -217,7 +217,7 @@ button.int{
   cursor: pointer;
   transition: 0.6s;
 }
-button.pag{
+button.pag,button.pag1{
   text-decoration: none;
   padding: 1%;
   font-size: 1rem;

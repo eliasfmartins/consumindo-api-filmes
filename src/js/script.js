@@ -16,8 +16,11 @@ const nav = document.querySelector(".nav");
 const more = document.querySelector('.moreMovies');
 let page = 1
 const numeropage = document.querySelector('.pag')
+const numeropage1 = document.querySelector('.pag1')
 const btnPageNext = document.querySelector('.next')
 const btnPagepreve = document.querySelector('.prev')
+const btnpageNext1 = document.querySelector('.next1')
+const btnpagepreve1 = document.querySelector('.prev1')
 
 
 // numeropage.innerHTML=page
@@ -26,6 +29,20 @@ btnPageNext.addEventListener('click', async e=>{
   e.preventDefault()
   page++
   numeropage.innerHTML=page
+  numeropage1.innerHTML=page
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=${page}`
+  )
+  const data = await response.json();
+  div.innerHTML = "";
+  createMovieCard(data);
+  window.location.href='#card';
+})
+btnpageNext1.addEventListener('click', async e=>{
+  e.preventDefault()
+  page++
+  numeropage.innerHTML=page
+  numeropage1.innerHTML=page
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=${page}`
   )
@@ -40,6 +57,22 @@ btnPagepreve.addEventListener('click',async e=>{
   if(page>=2)
   page--
   numeropage.innerHTML=page
+  numeropage1.innerHTML=page
+  const response = await fetch(
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=${page}`
+  )
+  const data = await response.json();
+  div.innerHTML = "";
+  createMovieCard(data);
+  window.location.href='#card';
+})
+btnpagepreve1.addEventListener('click',async e=>{
+  console.log()
+  e.preventDefault()
+  if(page>=2)
+  page--
+  numeropage.innerHTML=page
+  numeropage1.innerHTML=page
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/top_rated?api_key=17cee563809b303918f439483a696deb&language=pt-BR&page=${page}`
   )
