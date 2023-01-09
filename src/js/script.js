@@ -138,6 +138,9 @@ input.addEventListener("keypress", (e) => {
 });
 home.addEventListener("click", (e) => {
   div.innerHTML = "";
+  page = 1;
+  numeropage.innerHTML=1    
+  numeropage1.innerHTML=1
   filmes(url);
 });
 categoria.addEventListener("click", async (e) => {
