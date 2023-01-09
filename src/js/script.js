@@ -67,9 +67,12 @@ btn.addEventListener("click", (e) => {
   nav.classList.toggle("hidden");
 });
 botaopesquisa.addEventListener('click', e =>{
-   console.log('cheguei nessa kasseta')
    const inputValue = input.value;
    searchMovieByName(inputValue);
+   if(input.value){
+    input.value= '';
+  }
+
    window.location.href='#card'; 
  });
 // document.addEventListener('click', e=>{
@@ -89,7 +92,12 @@ input.addEventListener("keypress", (e) => {
   const inputValue = input.value;
   if (e.keyCode === 13) {
     searchMovieByName(inputValue);
-    input.innerHTML = "";
+    input.value = '';
+    // if(input.value){
+    //   input.value= '';
+    // }
+  
+
   }
   if(e.keyCode == 13){
     window.location.href='#card';
