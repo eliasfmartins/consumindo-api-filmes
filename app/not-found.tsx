@@ -14,11 +14,6 @@ export default function NotFound() {
           <motion.div
             key={i}
             className="absolute opacity-10"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-              rotate: Math.random() * 360,
-            }}
             animate={{
               y: [null, Math.random() * -200 - 100],
               rotate: [null, Math.random() * 360 + 180],
